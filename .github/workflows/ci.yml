@@ -17,10 +17,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
-      - name: Use Node.js 20.4
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v7
         with:
-          node-version: 20.4
+          node-version: 20.x
       - name: Install dependencies and run verification
         run: npm ci
       - name: Run verification
